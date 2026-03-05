@@ -10,6 +10,7 @@ import java.util.Map.Entry;
 
 public class BlackJack {
 
+    private String usuario = "YO";
     private Baraja baraja;
     private HashMap<Jugador, List<Carta>> jugadores;
     private List<Carta> crupier;
@@ -149,6 +150,14 @@ public class BlackJack {
             puntaje -= 10;
             ases--;
         }
+
+        System.out.println(usuario);
+
         return puntaje;
+    }
+
+    @Override
+    public String toString() {
+        return usuario + " ha hecho esto.";
     }
 }
